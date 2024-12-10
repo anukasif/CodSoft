@@ -1,0 +1,156 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  color: #333;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(to right, #8e44ad, #3498db);
+  color: white;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* Sections */
+section {
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 90%;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+/* About Section */
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #3498db;
+}
+
+/* Skills Section */
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.skill {
+  background: #3498db;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  flex: 1 1 150px;
+}
+
+/* Projects Section */
+/* .projects-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+} */
+ /* Projects Section */
+.projects-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.project {
+  flex: 1 1 calc(300px + 20px); /* Adjusts for spacing */
+  max-width: 320px; /* Ensures it doesn't grow beyond a reasonable size */
+  text-align: center;
+}
+
+.project img {
+  width: 100%; /* Ensures responsiveness */
+  max-width: 300px; /* Fixes the max width */
+  height: auto; /* Maintains the aspect ratio */
+  aspect-ratio: 3 / 2; /* Enforces 300x200 proportion */
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  object-fit: cover; /* Ensures image fills the box nicely */
+}
+
+
+.project h3 {
+  margin-top: 0.5rem;
+  color: #8e44ad;
+}
+
+.project p {
+  margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #8e44ad;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  
+
+  .projects-container {
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+}
